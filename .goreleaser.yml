@@ -1,11 +1,11 @@
 version: 2
-project_name: cdrops
+project_name: cdrops2
 before:
   hooks:
     - go mod tidy
 builds:
   - main: .
-    binary: cdrops
+    binary: cdrops2
     ldflags:
       - -s -w
       - -X main.Version={{.Version}}
